@@ -1,0 +1,25 @@
+body {
+  background-color: #FFFFFF;
+}
+h1 {
+  color: blue;
+  font-family: cursive, georgia;
+
+}
+p {
+  font-family: georgia;
+  font-size: 100%;
+  border: 1px solid black;
+padding: 20px;
+}
+#coolparagraph
+
+a:link {
+  color:black
+}
+a:visited{
+  color:purple
+}
+a:hover {
+  color: blue
+}
