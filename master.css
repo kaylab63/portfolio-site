@@ -1,0 +1,23 @@
+body {
+  background-image: url("https://www.noupe.com/wp-content/uploads/2009/10/twitter-patterns-3.jpg");
+}
+h1 {
+  color: blue;
+  font-family: cursive, georgia;
+
+}
+p {
+  border: 1px solid black;
+padding: 20px;
+}
+#coolparagraph
+
+a:link {
+  color:darkred
+}
+a:visited{
+  color:black
+}
+a:hover {
+  color: grey
+}
