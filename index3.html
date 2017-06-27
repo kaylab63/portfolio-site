@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script>document.onmousemove("demo").innerHTML</script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -19,7 +19,7 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-      background-color: blueviolet; /* pink */
+      background-color: blueviolet; /* violet */
       color: #ffffff;
   }
   .bg-2 { 
@@ -78,8 +78,60 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">Who Am I?</h3>
-  <img src="kayla.jpg" class="img-responsive img-circle margin" style="display:inline" alt="kayla image" width="250" height="350">
-  <h3>Kayla Blount</h3>
+<style>
+    
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+    height: 40%;
+    width: 40%
+    
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: violet;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: ghostwhite;
+  font-size: 50px;       
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="kayla.jpg" class="img-responsive img-circle margin" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Kayla Blount</div>
+  </div>
+</div>
+
+</body>        
+<div>    
+  <h3>Welcome to My Site</h3>
 </div>
 
 <!-- Second Container -->
@@ -101,7 +153,7 @@
     </div>
     <div class="col-sm-4"> 
       <p>Facebook</p>
-      <img src="facebook.jpg" class="img-center" style="width:20%" alt="Image">
+        <a href="https://www.facebook.com/kayla.blount.3"><img src="facebook.jpg" class="img-center" style="width:20%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
       <p> Snapchat</p>
